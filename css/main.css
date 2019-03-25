@@ -100,6 +100,14 @@ textarea {
 /*
 ~~~~~~~~ Start Utility classes ~~~~~~~~~
 */
+.div-img-phone {
+    width: 100%;
+}
+
+.div-infos {
+    width: 40%;
+    margin: auto;
+}
 
 /*
 ~~~~~~~~ End Utility classes ~~~~~~~~~
@@ -110,7 +118,17 @@ textarea {
 /*
 ~~~~~~~~ Start Common rules ~~~~~~~~~
 */
+img {
+    width: 100%;
+}
 
+h1,h2 {
+    text-align: center;
+}
+
+p {
+    text-justify: auto;
+}
 /*
 ~~~~~~~~ End Common Rules ~~~~~~~~~
 */
@@ -121,6 +139,16 @@ textarea {
 ~~~~~~~~ Start Header rules ~~~~~~~~~
 */
 
+#logo {
+    width: 30%;
+    margin-top: 1em;
+}
+
+.navBar-phone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /*
 ~~~~~~~~ End Header Rules ~~~~~~~~~
 */
@@ -135,20 +163,23 @@ textarea {
 ~~~~~~~~ End Main Rules ~~~~~~~~~
 */
 
+@media screen and (min-width: 640px) {
+.div-img-phone {
+    display:none;
+    }
+}
 
+/* @media screen and (max-width: 800px) {
+.div-img-phone {
+    display:none;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 1200px) {
+.div-img-phone {
+    display:none;
+    }
+}  */
 /* ==========================================================================
    Helper classes
    ========================================================================== */
