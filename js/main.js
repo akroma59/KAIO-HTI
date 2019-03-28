@@ -14,7 +14,7 @@ function showImg() {
 }
 
 function insertContent() {
-    for (let i = 0; i < sliderPart.length; i++) {
+    for (var i = 0; i < sliderPart.length; i++) {
         sliderPart[i].innerHTML="";
         sliderPart[i].appendChild(sliderImg[i]);
         sliderPart[i].appendChild(sliderBlock[i]);
