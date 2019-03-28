@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/
 
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -104,9 +104,95 @@ textarea {
     width: 100%;
 }
 
-.div-infos {
+.div-img-slider {
     width: 40%;
+}
+.div-img-tab {
+    padding: 0;
+    width: 50%;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.div-infos {
+    width: 50%;
     margin: auto;
+}
+
+.infos-a {
+  padding: 7px;
+  border-radius: 0em 0em 1em 0em;
+  background-color:#D11301;
+}
+
+.savoir {
+    border-radius: 0px 8px 8px 0px;
+    padding: 8px;
+    background-color:#f95b4C;
+    margin-left: -4px;
+    font-size: 14px;
+}
+
+.partager {
+    border-radius: 8px 0px 0px 8px;
+    padding: 8px;
+    background-color:#ea2816;
+}
+
+#linkGrue {
+    padding: 8px;
+    border-radius: 1em;
+    background-color:#D11301;
+    margin-left: -4px;
+}
+.marques-a {
+  padding: 0.8em;
+  border-radius: 1em;
+  background-color:#D11301;
+}
+
+.t-white {
+    color: white;
+}
+
+.t-gray {
+    color: gray;
+}
+
+.t-orange {
+    color: #F86624;
+}
+ 
+
+.overflowHidden {
+    overflow: hidden;
+}
+
+.noPadding {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: rgb(226, 226, 226);
+    height: 100%;
+}
+
+.linkContainer{
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+
+.linkContainer a {
+    font-size: 11px;
+}
+
+.infoContainer{
+    border-radius:1em;
+}
+
+a {
+    color: black;
 }
 
 /*
@@ -118,16 +204,55 @@ textarea {
 /*
 ~~~~~~~~ Start Common rules ~~~~~~~~~
 */
+
+a {
+    color: white;
+}
 img {
     width: 100%;
 }
 
-h1,h2 {
-    text-align: center;
+.card-img{
+    width: auto;
+    height: 200px;
+}
+
+.card-text{
+    background: rgb(226, 226, 226);
+    border-radius: 1em 1em 1em 1em;
+}
+
+.img-border {
+    border-radius: 1em 1em 0em 0em; 
+}
+.card-text h2,p {
+    font-size: 11px;
+    margin: 1em;
+}
+
+h1 {
+    font-size: 1em;
+}
+h2 {
+    margin-top: 2em;
+    padding: 0;
+    font-size: 1em;
+    color:#D11301;
 }
 
 p {
     text-justify: auto;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.t-right {
+    text-align: right;
+}
+.relative {
+    position: relative;
 }
 /*
 ~~~~~~~~ End Common Rules ~~~~~~~~~
@@ -139,16 +264,91 @@ p {
 ~~~~~~~~ Start Header rules ~~~~~~~~~
 */
 
+.navLangue-tab {
+    position: absolute;
+    top: 0em;
+    right: 3em;
+    padding: 1em;
+    border-radius: 0em 0em 1em 1em;
+    background-color:#D11301;
+}
+
+.navLangue-phone {
+    padding: 5px;
+    border-radius: 4px 4px 4px 4px;
+    border:solid 1px gray;
+}
 #logo {
-    width: 30%;
+    width: 100%;
     margin-top: 1em;
 }
 
+#texteGrue {
+    width: 25%;
+    position: absolute;
+    top: 5%;
+    right: 22%;
+}
+
+.nacelles {
+    padding: 8px;
+    background-color: #B10F01;
+    border-radius: 8px 0px 0px 8px;
+    }
+
+.btp {
+    padding: 8px;
+    background-color: #cf1302;
+    margin-left: -4px;    
+}
+
+.location {
+    margin-left: -4px;
+    padding: 8px;
+    background-color:#ea2816;
+    
+}
+
+.batiment {
+    margin-left: -4px;
+    padding: 8px;
+    background-color:#f95b4C;
+    border-radius: 0px 8px 8px 0px;
+    width: 20%;
+}
+
+#kaio {
+    color: #cf1302;
+}
+
+.divLink {
+    padding: 7px;
+}
+.mTop {
+    margin-top:2em;
+}
+
+.mRight {
+    margin-right: 2em;
+}
+
+.mBot {
+    margin-bottom:3em;
+}
 .navBar-phone{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.navBar-tab{
+    color: white;
+    padding: 1em;
+    border-radius: 12px;
+    background-color:#D11301;
+}
+
+
 /*
 ~~~~~~~~ End Header Rules ~~~~~~~~~
 */
@@ -163,23 +363,117 @@ p {
 ~~~~~~~~ End Main Rules ~~~~~~~~~
 */
 
-@media screen and (min-width: 640px) {
-.div-img-phone {
-    display:none;
-    }
-}
 
-/* @media screen and (max-width: 800px) {
-.div-img-phone {
-    display:none;
+@media screen and (min-width: 992px) {
+    .linkContainer{
+        position: absolute;
+        bottom: 3px;
+        right: -3px;
     }
-}
 
-@media screen and (max-width: 1200px) {
-.div-img-phone {
-    display:none;
+    .linkContainer a {
+        font-size: 10.6px
     }
-}  */
+
+    .savoir {
+        padding: 0.5em;
+        border-radius: 0em 0em 1em 0em;
+    }
+
+    .partager {
+        padding: 0.5em;
+        border-radius: 0;
+    }
+
+    .nacelles {
+        padding: 0.5em;
+        background-color: #B10F01;
+        margin-left: -4px;
+        border-radius: 0;
+    }
+    
+    .btp {
+        padding: 0.5em;
+        background-color: #cf1302;
+        margin-left: -4px;
+    }
+    
+    .batiment {
+        padding: 0.5em;
+        background-color:#f95b4C;
+        margin-left: -4px;
+        border-radius: 0em 0em 1em 0em;
+    }
+    
+    .location {
+        padding: 0.5em;
+        background-color:#ea2816;
+        margin-left: -4px;
+    }
+    #logo {
+        width: 70%;
+        margin-left: 3em;
+    }
+
+    .marques-a {
+        padding: 1em;
+    }
+
+    .slider-img{
+        height: 100px;
+        width: 60%;
+        margin: auto;
+    }
+
+    .slider-img img {
+        vertical-align: middle;
+    }
+
+    #slider {
+        position: relative;
+    }
+
+    #btnLeft, #btnRight {
+        background-color: transparent;
+        color: #F86624;
+        border: none;
+        font-weight: bold;
+    }
+
+    #btnLeft{
+        position: absolute;
+        left: 35%;
+        top: 25%;
+    }
+
+    #btnRight{
+        position: absolute;
+        right: 35%;
+        top: 25%;
+    }
+
+
+    .card-text{
+       border-radius: 1em 1em 1em 1em;
+    }
+
+    .img-border {
+        border-radius: 1em 0em 0em 1em; 
+    }
+}  
+
+
+@media screen and (min-width: 1200px) {
+    .linkContainer a{
+        font-size: 12.8px;
+    }
+
+    .linkContainer{
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+    }
+}  
 /* ==========================================================================
    Helper classes
    ========================================================================== */
